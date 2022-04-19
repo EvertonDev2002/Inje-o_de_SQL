@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 :root {
-    --primary-color: #595959;
     --bg-color: #212121;
     --light-color: #EEEEEE;
+    --primary-color: #595959;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-size: 18px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
 }
 
 body {
-    background-color: var(--bg-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
 }
 
 .container {
-    background-color: var(--light-color);
-    padding: 30px;
-    position: relative;
     width: 840px;
+    padding: 30px;
     height: 400px;
+    position: relative;
+    background-color: var(--light-color);
 }
 
 .container::after, 
@@ -46,36 +46,36 @@ body {
 }
 
 .container::before {
-    width: 5px;
-    height: 100%;
-    left: -20px;
     top: 20px;
+    width: 5px;
+    left: -20px;
+    height: 100%;
 }
 
 .container-top{
+    width: 100%;
     display: flex;
+    margin-bottom: 60px;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    margin-bottom: 60px;
 }
 
 .container-top > h2 {
-    font-size: 1.5rem;
     width: 300px;
+    font-size: 1.5rem;
 }
 .container-top > a{
     width: 100px;
     height: 40px;
-    padding-top: 9px;
-    padding-bottom: 6px;
     border: none;
     cursor: pointer;
-    background-color: var(--bg-color);
-    color: var(--light-color);
+    padding-top: 9px;
     position: relative;
     text-align: center;
+    padding-bottom: 6px;
     text-decoration: none;
+    color: var(--light-color);
+    background-color: var(--bg-color);
 }
 .data{
     margin-left: 15px;
